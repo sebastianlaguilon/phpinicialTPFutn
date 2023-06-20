@@ -1,0 +1,242 @@
+/* Estilos Generales */
+*{
+   padding:0 ;
+   margin: 0px;
+   font-family: sans-serif, Arial, Helvetica;
+}
+
+
+body{
+   background: url('../imagenes/fondo.jpg');
+   background-repeat: repeat;
+ }
+ 
+ a{
+   color: #2416e7;
+ }
+
+ A:visited{
+   color: #2416e7;
+ }
+
+ a:hover{
+   color: brown;
+ }
+
+ /*CONTAINER*/
+ #container{
+   width: 80%;
+   margin: 0px auto;
+   box-shadow: 0px 0px 10px gray;
+   background: white;
+ }
+
+ /* HEADER */
+ #header {
+   height: 145px;
+   margin-left: auto;
+   margin-right: auto;
+   background: #f0f0f0;
+ }
+ 
+#logo{
+   padding: 20px;
+   margin-left: 20px;
+   float: left;
+}
+
+#logo img{
+   height: 100px;
+   float: left;
+}
+
+#logo a{
+   float: left;
+   font-size: 40px;
+   letter-spacing: 4px;
+   font-family: 'Open Sans',Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+   color: #01B1EA;
+   font-weight: bold;
+   text-decoration: none;
+   margin-top: 35px;
+   margin-left:290px;
+   text-shadow: 0px 2px 1px #222222;
+   transition: all 300ms;
+}
+
+#logo a:hover{
+   text-shadow: 0px 2px 1px #222222, 0px 0px 4px #01B1EA  ;
+}
+
+/* MENU */
+
+#menu {
+   clear: both;
+   background: #222;
+   color: white;
+   height: 55px;
+   border-bottom:4px solid #01B1EA;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+
+#menu ul {
+   list-style: none;
+   margin: 0px auto;
+   margin-left: 25px;
+}
+
+#menu ul li {
+   line-height: 55px;
+   float: left;
+   border-right: 1px solid #363636;
+}
+
+#menu a{
+   display: block;
+   color: white;
+   text-decoration: none;
+   padding-left:15px;
+   padding-right: 15px;
+   transition: all 300ms;
+}
+
+#menu a:first-child{
+   border-left: 1px solid #363636;
+}
+
+#menu a:hover{
+   background: #01B1EA;
+}
+
+/* Estilos del submenú */
+#menu ul.submenu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 0;
+  z-index: 1;
+}
+
+#menu ul.submenu li {
+  width: 100%;
+}
+
+#menu ul.submenu li a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Mostrar el submenú al hacer clic en "Inicio" */
+#menu ul li:hover > ul.submenu {
+  display: block;
+}
+
+/*FOOTER*/
+
+#footer{
+  clear: both;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background: #222222;
+  border-top: 4px solid #01B1EA;
+
+}
+
+
+
+/* Estilos Generales */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+h2{
+   text-align: center;
+   color: red;
+}
+
+/* Formulario */
+form {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #01B1EA;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea,
+form select {
+  width: 95%;
+  padding: 10px;
+
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form input[type="file"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form input[type="file"]::file-selector-button {
+  padding: 8px 15px;
+  background-color: #01B1EA;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="file"]::file-selector-button:hover {
+  background-color: #0096C7;
+}
+
+form input[type="submit"] {
+  background-color: #01B1EA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0096C7;
+}
+
+form .registrarse-btn {
+  text-align: center;
+  margin-top: 20px;
+}
